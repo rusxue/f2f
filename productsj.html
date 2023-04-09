@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--引入公共样式-->
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<!--引入重置样式-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<!--引入主页内容样式-->
+		<link rel="stylesheet" type="text/css" href="css/product.css"/>
+		<!--jquery引入-->
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<!--产品js   index引入-->
+		<script src="js/common.js"></script>
+		<script src="js/product.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+	  var showproduct = {
+		  "boxid":"showbox",
+		  "sumid":"showsum",
+		  "boxw":400,//宽度,该版本中请把宽高填写成一样
+		  "boxh":400,//高度,该版本中请把宽高填写成一样
+		  "sumw":60,//列表每个宽度,该版本中请把宽高填写成一样
+		  "sumh":60,//列表每个高度,该版本中请把宽高填写成一样
+		  "sumi":7,//列表间隔
+		  "sums":5,//列表显示个数
+		  "sumsel":"sel",
+		  "sumborder":1,//列表边框，没有边框填写0，边框在css中修改
+		  "lastid":"showlast",
+		  "nextid":"shownext"
+		  };//参数定义	  
+	 $.ljsGlasses.pcGlasses(showproduct);//方法调用，务必在加载完后执行
+  });
+</script>
+	</head>
+	<body>
+		<div id="top" class="box">
+			<div class="box1200 clear">
+				<p id="topleft" class="left">legochina.cn</p>
+				<p id="topright" class="right">
+					<span class="topspan">欢迎光临F2F，请</span>
+					<a class="graya" href="enter.html">登录</a>
+					<span class="topspan">\</span>
+					<a class="reda" href="login.html">注册</a>
+				</p>
+			</div>
+			
+		</div>
+			<!--导航栏-->
+		<div id="navmax" class="box1200 clear">
+			<div id="logo">
+				<img src="img/logoduhaoshu.png"/>
+			</div>
+			<div class="box1200 clear h30" >
+				<form id="navmaxform" action="#" method="post" >
+					<input id="navmaxtext" type="text" name="text" placeholder="云南沙荆" />
+					<input id="navmaxsub" type="button" value=""/>
+				</form>
+				<div id="navmaxshop" class="clear">
+					<div id="shopminleft">
+						购物车
+					</div>
+					<div id="shopminright">
+						我的订单
+					</div>
+				</div>
+			</div>
+			
+			<ul id="navmaxcon" class="clear">
+				<li>水果</li>
+				<li>蔬菜</li>
+				<li>禽畜肉蛋</li>
+				<li>水产</li>
+				<li>农副加工</li>
+				<li>粮油米面</li>
+				<li>种子种苗</li>
+				<li>苗木花草</li>
+				<li>农资农机</li>
+				<li>商品列表</li>
+				<li><a >会员中心</a></li>
+			</ul>
+		</div>
+		
+		
+		<!--主内容区-->
+		<div id="display" class="box">
+			<!--书签-->
+			<!--书的展示区-->
+			<div id="displayCon" class=" box1200 clear">
+				<div id="displayConBook">
+					<div id="showbox">
+					  <img src="img/sj.jpeg" width="158" height="116" />
+					  <img src="img/sj2.jpg" width="240" height="286" />
+					  
+					</div><!--展示图片盒子-->
+					<div id="showsum"></div><!--展示图片里边-->
+					<p class="showpage">
+					  <a href="javascript:void(0);" id="showlast"> < </a>
+					  <a href="javascript:void(0);" id="shownext"> > </a>
+					</p>
+					<div class="bianma">
+					
+					</div>
+				</div>
+				
+				<div id="displayConShop">
+					<p>云南沙棘</p>
+					<p>颗粒饱满，色泽红润</p>
+					<div id="displayConShopM">
+						<p>F2F价：<span class="redMonery">￥40</span></p>
+						<p>促销信息:<span>满减 &nbsp;&nbsp;每满150.00元，可减50.00元现金 </span> <span>详情&gt;&gt;</span> </p>
+						<p>领券:<img src="img/youhui.png"/><img src="img/youhui.png"/></p>
+					</div>
+					
+					<div id="shoping" class="clear">
+					
+						<div id="shopingSelect">
+							种类选择：
+						</div>
+						<div>
+							<div class="shopingSelect">
+								现货
+								<img class="xuanzhong" src="img/xuanzhong.png"/>
+							</div> 
+							<div class="shopingSelect">
+								预定
+								<img class="xuanzhong" src="img/xuanzhong.png"/>
+							</div> 
+						</div>
+						
+					</div>
+					<div class="clear">
+						<div id="number">
+						
+					
+							<input type="text" value="1" disabled="disabled" />
+							<div >
+								<div class="numberJia">+</div>
+								<div class="numberjian">-</div>
+							</div>
+						</div>
+						<div id="gouwu">
+							加入购物车
+						</div>
+					</div>
+					
+					
+					<div class="tishi">温馨提示：支持7天无理由退货</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+
+		
+		
+		
+			
+	<!--页脚-->
+		<div class="box" id="footer">
+			<p class="box recommendTitle"></p>
+			<div class="box" id="footermax">
+				<div id="footertop">
+					<div class="footertop">
+						
+					</div>
+					<div id="footertop2" class="footertop">
+						
+					</div>
+					<div id="footertop3" class="footertop">
+						
+					</div>
+					<div id="footertop4"  class="footertop">
+						
+					</div>
+				</div>
+			</div>
+			<div id="footerCenter" class=" clear">
+				<ul class="footermin">
+					<li class="footerminbox">购物指南</li>
+					<li>购物流程</li>
+					<li>发票制度</li>
+					<li>账户管理</li>
+					<li>会员优惠</li>
+				</ul>
+				<ul class="footermin">
+					<li class="footerminbox">购物指南</li>
+					<li>购物流程</li>
+					<li>发票制度</li>
+					<li>账户管理</li>
+					<li>会员优惠</li>
+				</ul>
+				<ul class="footermin">
+					<li class="footerminbox">购物指南</li>
+					<li>购物流程</li>
+					<li>发票制度</li>
+					<li>账户管理</li>
+					<li>会员优惠</li>
+				</ul>
+				<ul class="footermin">
+					<li class="footerminbox">购物指南</li>
+					<li>购物流程</li>
+					<li>发票制度</li>
+					<li>账户管理</li>
+					<li>会员优惠</li>
+				</ul>
+				<ul class="footermin">
+					<li class="footerminbox">购物指南</li>
+					<li>购物流程</li>
+					<li>发票制度</li>
+					<li>账户管理</li>
+					<li>会员优惠</li>
+				</ul>
+			</div>
+			<div id="footerbut">
+				<a href="#">公司简介</a>|<a href="#">Investor&nbsp;Relations</a>|<a href="#">网站联盟</a>|<a href="#">F2F招商</a>|<a href="#">机构销售</a>|<a href="#">手机F2F</a>|<a href="#">官方Blog</a>|<a href="#">热词搜索</a>
+				<p><span>Copyrigth</span> <span>(C)</span> <span>F2F网</span> <span>2004-2016</span> <span>All</span> <span>Rights</span> <span>Reserved</span> </p>
+			</div>
+		</div>
+	</body>
+</html>
